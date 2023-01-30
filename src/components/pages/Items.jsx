@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { filterItems } from '../../state/ItemSlice';
 import { useParams } from 'react-router-dom';
 import GridList from '../GridList/GridList';
-import { Category } from '../ecom-ui';
+import { Item } from '../ecom-ui';
 
 const Items = () => {
   const dispatch = useDispatch();
@@ -18,7 +18,7 @@ const Items = () => {
   return (
     <>
       <GridList items={records} loading={loading} error={error}>
-        <Category />
+        <Item />
       </GridList>
     </>
   );
