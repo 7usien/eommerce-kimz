@@ -1,0 +1,38 @@
+{
+  "category": [
+    {
+      "id": "1",
+      "title": "man",
+      "prefix": "men",
+      "img": "https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=750&h=750&dpr=2"
+    },
+
+    {
+      "id": "2",
+      "title": "women",
+      "prefix": "women",
+      "img": "https://images.pexels.com/photos/1233648/pexels-photo-1233648.jpeg?auto=compress&cs=tinysrgb&w=750&h=750&dpr=2"
+    },
+
+    {
+      "id": "3",
+      "title": "kids",
+      "prefix": "kids",
+      "img": "https://images.pexels.com/photos/10508388/pexels-photo-10508388.jpeg?auto=compress&cs=tinysrgb&w=750&h=750&dpr=2"
+    },
+
+    {
+      "id": "4",
+      "title": "baby",
+      "prefix": "baby",
+      "img": "https://images.pexels.com/photos/13998756/pexels-photo-13998756.jpeg?auto=compress&cs=tinysrgb&w=750&h=750&dpr=2"
+    },
+
+    {
+      "id": "5",
+      "title": "sport",
+      "prefix": "sport",
+      "img": "https://images.pexels.com/photos/12886721/pexels-photo-12886721.jpeg?auto=compress&cs=tinysrgb&w=750&h=750&dpr=2"
+    }
+  ]
+}
