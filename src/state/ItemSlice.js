@@ -1,4 +1,3 @@
-import { Satellite } from '@mui/icons-material';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const initalState = {
