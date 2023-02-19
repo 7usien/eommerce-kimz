@@ -11,6 +11,10 @@ const Items = () => {
 
   useEffect(() => {
     dispatch(filterItems(prefix));
+
+    return () => {
+      dispatch({ type: 'items/cleanRecords' });
+    };
   }, [dispatch, prefix]);
 
   const { loading, error, records } = useSelector((state) => state.items);
@@ -18,7 +22,7 @@ const Items = () => {
   return (
     <>
       <GridList items={records} loading={loading} error={error}>
-        <Item />
+        <Item actionType='add' />
       </GridList>
     </>
   );
