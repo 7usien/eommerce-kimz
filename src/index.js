@@ -15,7 +15,8 @@ import Login from './components/pages/Login';
 import Register from './components/pages/Register';
 import NewCollections from './components/pages/NewCollections';
 import { Provider } from 'react-redux';
-import store from './state/index';
+import { store, persistor } from './state/index';
+import { PersistGate } from 'redux-persist/integration/react';
 import Item from './components/ecom-ui/Item/Item';
 
 const router = createBrowserRouter([
@@ -49,8 +50,10 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
-    <RouterProvider router={router}>
-      <App />
-    </RouterProvider>
+    <PersistGate loading={null} persistor={persistor}>
+      <RouterProvider router={router}>
+        <App />
+      </RouterProvider>
+    </PersistGate>
   </Provider>
 );

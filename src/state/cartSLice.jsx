@@ -23,8 +23,8 @@ export const totalCartQuantity = createSelector(
   (items) => {
     let totalQuantity = 0;
 
-    for (let [key, value] in items) {
-      totalQuantity = +value;
+    for (let key in items) {
+      totalQuantity += items[key]; // value of key added to totalQuantity
     }
     return totalQuantity;
   }
